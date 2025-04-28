@@ -1,3 +1,25 @@
+"""
+Script: Create a Markdown Writeup Template
+Author: barrythecanary
+
+Description:
+This script generates a pre-formatted Markdown (.md) file for a writeup, including metadata like author, title, category, and difficulty.
+
+Usage:
+Run the script from the command line with the following arguments:
+    -t, --title       (required) Title of the writeup
+    -c, --category    (required) Category of the writeup
+    -a, --author      (optional) Author name (default: "barrythecanary")
+    -d, --difficulty  (optional) Difficulty level (default: "-")
+    -p, --path        (optional) Target directory path (default: current directory)
+
+Example:
+python script.py -t "ChallengeTitle" -c "Cryptography" -d "Hard" -a "YourName" -p "./writeups"
+
+Notes:
+- If a file with the same title already exists in the target path, the script will prompt before overwriting.
+- Ensure Python 3.x is installed to run this script.
+"""
 import argparse
 import os
 
